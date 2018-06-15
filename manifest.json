@@ -1,0 +1,25 @@
+{
+    "name": "Twitter without those annoying animated GIFs",
+    "version": "1.0",
+    "description": "A new shiny twitter is under your feets!",
+    "content_scripts": [
+     {
+       "matches": [
+         "http://*.twitter.com/*",
+         "https://*.twitter.com/*"
+       ],
+       "css": ["nogif.css"]
+     }
+   ],
+   "web_accessible_resources": [
+      "nogif.css"
+    ],
+    "icons": {
+      "16": "icon16.png",
+      "19": "icon19.png",
+      "38": "icon38.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "manifest_version": 2
+  }

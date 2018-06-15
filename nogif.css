@@ -1,0 +1,28 @@
+.PlayableMedia--gif {
+  padding: 50px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.PlayableMedia--gif::before {
+  color: white;
+  content: 'There is a GIF that fills my lack of content';
+}
+
+.PlayableMedia--gif .PlayableMedia-container {
+  display: none;
+}
+
+.PlayableMedia--gif:hover {
+  padding: 0;
+  background-color: none;
+  text-align: left;
+}
+
+.PlayableMedia--gif:hover .PlayableMedia-container {
+  display: block;
+}
+
+.PlayableMedia--gif:hover::before {
+  content: none;
+}
